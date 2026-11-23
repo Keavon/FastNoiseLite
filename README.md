@@ -31,6 +31,7 @@ If you are looking for a more extensive noise generation library consider using 
 - [C99](/C/)
 - [HLSL](/HLSL/)
 - [GLSL](/GLSL/)
+- [WGSL](/WGSL/)
 - [Go](/Go/)
 - [Java](/Java/)
 - [JavaScript and TypeScript](/JavaScript/)  
@@ -93,7 +94,7 @@ Million points of noise generated per second (higher = better)
 - [@snowfoxsh](https://github.com/snowfoxsh) for creating the JavaScript port.
 - [@dotlogix](https://github.com/dotlogix) for creating the GLSL port.
 - [@ForeverZer0](https://github.com/ForeverZer0) for creating the Zig and Go ports.
-- [@Keavon](https://github.com/Keavon) for creating the Rust port.
+- [@Keavon](https://github.com/Keavon) for creating the Rust and WGSL ports.
 - [@jordan4ibanez](https://github.com/jordan4ibanez) for creating the Fortran port.
 - [@gregoryfmartin](https://github.com/gregoryfmartin) for creating the Powershell port.
 - [@itsdanott](https://github.com/itsdanott) for creating the Odin port.

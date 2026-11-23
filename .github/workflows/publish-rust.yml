@@ -18,7 +18,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      # The crate carries its own copy of the WGSL port for its "wgsl" feature flag, since the published crate only includes its own folder
+      - name: Copy the WGSL port into the crate
+        run: cp WGSL/FastNoiseLite.wgsl Rust/FastNoiseLite.wgsl
+
       - name: Publish to crates.io
-        run: cd Rust && cargo publish
+        run: cd Rust && cargo publish --allow-dirty
         env:
           CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}

@@ -66,6 +66,15 @@ type Float = f32;
 #[cfg(feature = "f64")]
 type Float = f64;
 
+// ===================================================================================
+// "wgsl" feature flag:
+// For sampling noise on the GPU with the WGSL port, in step with this crate's version
+// ===================================================================================
+
+/// The source of the [WGSL port](https://github.com/Auburn/FastNoiseLite/tree/master/WGSL) of FastNoise Lite, to prepend to a WGSL shader that calls its functions, such as `fnlGetNoise2D`.
+#[cfg(feature = "wgsl")]
+pub const WGSL_SOURCE: &str = include_str!(env!("FASTNOISE_LITE_WGSL_PORT"));
+
 // ===========================================================================================================================================================
 // "std" and "libm" feature flags:
 // Ensures access to `sqrt()`, `trunc()`, and `abs()` floating point functions from either the Rust standard library, or the `libm` crate for `no_std` support

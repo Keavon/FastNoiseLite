@@ -1,6 +1,6 @@
 [package]
 name = "fastnoise-lite"
-version = "1.1.1"
+version = "1.2.0"
 edition = "2021"
 license = "MIT"
 description = "FastNoise Lite is an extremely portable open source noise generation library with a large selection of noise algorithms"
@@ -21,6 +21,7 @@ default = ["std"]
 f64 = []
 std = ["num-traits/std"]
 libm = ["num-traits/libm"]
+wgsl = []
 
 [dependencies]
 num-traits = { version = "0.2.18", optional = true, default-features = false }
